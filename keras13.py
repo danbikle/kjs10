@@ -65,4 +65,23 @@ print(test_y)
 # dan@pavlap:~/kjs10 $ 
 # dan@pavlap:~/kjs10 $ 
 
+
+# I should save the model:
+# ref:
+# https://github.com/transcranial/keras-js#usage
+model.save_weights('model.hdf5')
+with open('model.json', 'w') as f:
+  f.write(model.to_json())
+print('model saved as: model.hdf5 and modle.json')
+
+# I should run this shell command:
+# python encoder.py model.hdf5
+#from subprocess import call
+#call(["python","encoder.py","model.hdf5"])
+
+# I should create model_weights.buf, model_metadata.json:
+import encoder
+enc = encoder.Encoder('model.hdf5')
+enc.serialize()
+enc.save()
 'bye'
