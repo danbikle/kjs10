@@ -1,11 +1,20 @@
 {
   "name": "kjs10",
   "version": "1.0.0",
-  "description": "readme.txt",
-  "main": "index.js",
+  "description": "An attempt to operate keras.js",
+  "main": "node_modules/http-server/bin/http-server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'hello world' && exit"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Dan",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.8.5"
+  },
+  "engines": {
+    "node": "4.2.1"
+  },
+  "devDependencies": {
+    "fast-csv": "^0.6.0"
+  }
 }
