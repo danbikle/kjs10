@@ -72,7 +72,7 @@ print(test_y)
 model.save_weights('model.hdf5')
 with open('model.json', 'w') as f:
   f.write(model.to_json())
-print('model saved as: model.hdf5 and modle.json')
+print('model saved as: model.hdf5 and model.json')
 
 # I should run this shell command:
 # python encoder.py model.hdf5
